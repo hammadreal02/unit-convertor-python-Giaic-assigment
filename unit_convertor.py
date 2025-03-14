@@ -39,11 +39,12 @@ if category == "📏length":
 elif category == "⌚Time":
     units = {
         "Seconds": 1,
-        "Minute": 60,
-        "Hour": 3600,
-        "Day": 86400,
-        "Week": 604800.0,
-        "Year": 31536000.0
+        "Minute": 60, # 1 mint = 60sec
+        "Hour": 3600,   
+        "Day": 86400,  # 1day = 86400 second
+        "Week": 604800.0,  #1 week = 604800 second
+        "Month": 2628000.0,  #1 month = 2628000 second
+        "Year": 31536000.0  #1 year = 31536000 second
     }
 
     from_units = st.selectbox("FROM UNIT",list(units.keys()))
